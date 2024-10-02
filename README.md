@@ -24,6 +24,9 @@
 # updates in application
 1. if there are any changes that you added in application then dont forget to migrate the application. Migrate incorporates the new changes.
 2. python manage.py makemigrations
+    or
+   python manage.py makemigrations myapp (for specific app)
+3. python manage.py sqlmigrate myapp 0001 (to migrate db models or changes)
 
 # propagate model changes to sqlite
 1. python manage.py migrate
