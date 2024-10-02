@@ -18,7 +18,7 @@ class Item(models.Model):
     available = models.BooleanField(default=True)
     description = models.TextField(blank=True, null=True)
     def __str__(self):
-        return f"Item {self.id} of {self.type} type"
+        return f"Item {self.name} of {self.type} type"
 
 
 class Client(User):
