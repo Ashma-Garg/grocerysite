@@ -27,3 +27,6 @@
 
 # propagate model changes to sqlite
 1. python manage.py migrate
+
+# create superusername
+1. python manage.py createsuperuser
