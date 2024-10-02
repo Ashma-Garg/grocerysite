@@ -29,7 +29,7 @@ class Client(User):
     interested_in = models.ManyToManyField(Type)
     phone_number = models.CharField(blank=True, max_length=10)
     def __str__(self):
-        return f"Client {self.id} from {self.city}"
+        return f"Client {self.first_name} {self.last_name} from {self.city}"
 
 
 class OrderItem(models.Model):
@@ -55,7 +55,7 @@ class OrderItem(models.Model):
     last_updated = models.DateField(auto_now=True)
 
     def __str__(self):
-        return f"Order {self.id} by {self.client}"
+        return f"Order {self.id} by {self.client} for {self.item.name}"
     
     def total_price(self):
         # Assuming `price` field exists in the Item model
