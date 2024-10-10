@@ -7,6 +7,8 @@
     > if it doesn't run dont be angry. Just run pip show django. And you will see magic.
 5. open on localhost:8000 by running 
     > python manage.py runserver
+        or
+    > python manage.py runserver <port_number>
 6. open anohter terminal for other commands
 7. now if you want to create another app then run
     > python manage.py startapp franchise
@@ -33,3 +35,6 @@
 
 # create superusername
 1. python manage.py createsuperuser
+
+# urls
+1. Have your all urls in project folder in url file
